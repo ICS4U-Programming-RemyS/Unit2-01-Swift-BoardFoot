@@ -54,7 +54,8 @@ func boardFoot() {
         // Safely convert user height as a string to double and use guard to make sure input is valid
         guard let userHeightDoubleLoop = Double(userHeightString) else {
             // Error message
-            print("Invalid input \(userHeightString) and/or \(userWidthString). Please enter a height and width greater than 0.")
+            print("Invalid input \(userHeightString) and/or \(userWidthString)."
+                    , "Please enter a height and width greater than 0.")
             // Must use continue to go back to the start of the loop with guard
             continue
         }
@@ -62,7 +63,8 @@ func boardFoot() {
         // Safely convert user width as a string to double and use guard to make sure input is valid
         guard let userWidthDoubleLoop = Double(userWidthString) else {
             // Error message
-            print("Invalid input \(userHeightString) and/or \(userWidthString). Please enter a height and width greater than 0.")
+            print("Invalid input \(userHeightString) and/or \(userWidthString)."
+                    , "Please enter a height and width greater than 0.")
             // Must use continue to go back to the start of the loop with guard
             continue
         }
@@ -74,7 +76,8 @@ func boardFoot() {
         // If to see if height and width are greater than 0
         if userWidthDouble <= 0 || userHeightDouble <= 0 {
             // Error message
-            print("Invalid input \(userHeightDouble) and/or \(userHeightDouble). Please enter a height and width greater than 0.")
+            print("Invalid input \(userHeightString) and/or \(userWidthString)."
+                    , "Please enter a height and width greater than 0.")
         }
     // Loop runs until userHeightDouble and userWidthDouble are greater than 0
     } while userHeightDouble <= 0 || userWidthDouble <= 0
